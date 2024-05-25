@@ -1,0 +1,389 @@
+/*Created by Emily Pryor 12/4/2022 for CSCI 3803.50 Website Development*/
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%; }
+body{
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #9DA993;
+    
+}
+h3{
+    font-family: Helvetica, sans-serif;
+    color: #f2f2f2;
+}
+.container{
+    display:flex;
+ 
+}
+#dark{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+  }
+.logo{
+    margin-top:auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #9DA993;
+    padding: 10px;
+    z-index:2;
+    bottom:0;
+}
+/*image styles*/
+figure { 
+    display:block;  
+    padding: 4px;
+    margin: auto;
+  }
+  .coffeecup img{    
+    width:100px;
+    align-items: center; 
+     }
+  .contactgraphic img{
+    width:200px;
+    align-items: center;
+  }
+  
+figcaption {    
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+  .product img{
+    width:300px;
+    height: 300px;
+   justify-content: center;
+  }
+  .product figcaption{
+    background-color: #BCA88E;
+    color: #AEB8C4;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    max-width: 300px;
+   
+  }
+/*navigation styles*/
+.nav{
+    margin-top:auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content:space-evenly;
+    background-color:#BCA88E;
+    padding:5px;
+    z-index:1;
+    top:0;
+
+}
+.nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover{
+    color:#E4B4B4;
+}
+/*media query for navigation bar*/
+@media screen and (max-width: 600px) {
+    .logo, .nav, .flex-container {
+      flex-direction: column;
+      float: none;
+      width: 100%;
+    }
+  }  
+  
+  @media screen and (max-width: 600px) {
+    .mbanner img {      
+      float: none;
+      width: 100%;
+    }
+  }
+/*side bars*/
+.infoBar{
+    margin-top:auto;
+    height:100%;
+    width:200px;
+    position:absolute;
+    z-index:0;
+    align-items:baseline;
+    left:0;
+    overflow-x:hidden;
+    background-color:#BCA88E;
+    padding-top: 0px;    
+    color:white;
+}
+.rightbar{
+    margin-top:auto;
+    height:100%;
+    width:200px;
+    position:absolute;
+    z-index:0;
+    align-items:center;
+    right:0;
+    overflow-x:hidden;
+    background-color:#BCA88E;
+    color:white;
+
+;
+    padding-top: 0px;
+}
+.infobar a{
+    float:left;
+    text-align:center;
+    color:#BCA88E;
+    text-decoration:none;
+    font-size:17px;
+}
+/*media qureies for sidebars*/
+@media screen and (max-width: 600px) {
+    .sidebars, .column.side {
+        display:none;
+    }
+  }
+ 
+
+.active{
+    background-color: #E4B4B4; 
+}
+
+main{
+    flex:0 1 60%;
+    margin-left: auto;
+}
+/* first flex container*/
+.flex-container{
+    
+    display:flex;
+    color:white;
+    height:300px;
+    flex-direction:column;
+    justify-content: center, flex-start;
+    align-items: center;
+}
+/*creating columns for external flex container*/
+.column{
+    display:flex;   
+    float:left;
+    padding: 10px;
+    flex-direction: column;
+}
+.column.side{
+    width:30%;
+}
+.column.middle{
+    width:60%;
+    align-items: center;
+}
+.column.right{
+    width:10%;
+    align-items: center;
+}
+/* internal flex container*/
+.flexcontainer2{    
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:left;
+    align-items:flex-start;
+    
+
+}
+.flex-item-left{
+    flex:50%;
+    height:350px;
+    align-items:center;
+
+}
+.flex-item-right{
+    flex:50%;
+    height:350px;
+    align-items:center;    
+}
+.flex-item-left.dark{  
+    display:flex;
+    background-color:#CCAFA5;    
+}
+.flex-item-right.dark{    
+    display:flex;
+    background-color:#CCAFA5;
+}
+.flex-item-left.light{   
+    display:flex;
+    background-color: #DCD2CC;
+}
+.flex-item-right.light{   
+    display:flex;
+    background-color: #DCD2CC;
+}
+/*media queries for inner flex box*/
+@media screen and (max-width: 700px) {
+    .flex-item-left, .flex-item-right {   
+      flex-direction: column;
+    }
+  }
+/* Styles for Contact Table*/
+#contact {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #contact td, #contact th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #contact tr:nth-child(even){
+    background-color:#9DA993;
+    ;
+}
+  
+  #contact tr:hover {
+    background-color: #ddd;
+}
+  
+  #contact th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #BCA88E;
+    color: #AEB8C4;
+  }
+/*Merch grid styles*/
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+  }
+  /*social media links*/
+  a.social{
+    display:list-item;
+  }
+  a.social:link{
+    background-color: #BCA88E;
+    color:white;
+    border:3px solid #E4B4B4;
+    padding:10px 20px;
+    text-align:center;
+    text-decoration: none;
+    
+  }
+  a.social:visited{
+    background-color: #BCA88E;
+    color:#4b4b4b;
+    border:3px solid #E4B4B4;
+    padding:10px 20px;
+    text-align:center;
+    text-decoration: none;
+  }
+a.social:hover, a.social:active{
+    background-color: #9DA993
+
+;
+    color:#AEB8C4;
+}
+/*image styles*/
+.mbanner img{
+    max-width:100%;
+}
+.menu img{
+    max-width: 100%;
+    width:700px;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    width:100%;
+    padding: 3px;
+    background-color:#BCA88E;
+    color: white;
+  }
+aside{
+    flex: 0 1 20%;
+}  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+  #date{
+    align-items: baseline;
+    margin-bottom: 0px;
+  }
+
+  /*Forms Styles*/
+
+/*Order Forms*/
+input[type=text],select{
+  width:100%;
+  padding:12px 20px;
+  margin:8px 0;
+  display:inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  width:100%;
+  background-color: #a49393;
+  color: white;
+  padding: 14px 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+input[type=submit],datalist{
+  width:100%;
+  background-color: #E4B4B4;
+  color: white;
+  padding: 14px 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+input[type=submit]:hover{
+  background-color: #ffffff;
+  color:black;
+}
+input[type=submit]:link{
+  color:#a49393;
+}
+input[type=submit]:visited{
+  background-color:#a49393;
+  color:#e8b4b8;
+}
+input:active{
+  color: #ccc;
+}
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 12px 20px;
+  box-sizing:border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+p::first-letter{
+  font-size:larger;
+  
+}

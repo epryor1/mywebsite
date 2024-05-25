@@ -1,0 +1,163 @@
+<!--Created by Emily Pryor 12/4/2022 for CSCI 3803.50 Website Development
+    All images were created by me in canva (Canva.com) and are from their free public use resources.
+    Youtube embeddables were also created by me in canva and then uploaded to youtube.com.
+    */-->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Main Page</title>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel ="stylesheet" href = "/finalProject/css/styles1.css">
+        <link rel ="stylesheet" href = "/finalProject/css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=outline">
+        
+    </head>
+   
+
+    <body>
+        <div class = "container"></div>
+        <!--- Header and Business Logo-->
+        <div class = "logo">
+            <!--the image/logo-->
+            <figure>
+                <img src = "/finalProject/images/logo.png" alt = "logo" id="toplogo" width = 150>
+                <figcaption>Created in Canva</figcaption>
+            </figure>
+            <div id="dark" onclick="off()">                
+                <button onclick="on()">Change Theme</button>
+            </div> 
+        </div>
+        <!-- Navigation menu -->
+        <p class = "nav">
+            <a class = "active font-effect-outline" href = "/finalProject/html/index.html "><i class = "fa fa-coffee"></i>Main</a>
+            <a class="font-effect-outline" href = "/finalProject/html/menu.html"><i class="fa fa-coffee"></i>Menu</a>
+            <a class="font-effect-outline" href = "/finalProject/html/order.html"><i class="fa fa-coffee"></i>Order</a>
+            <a class="font-effect-outline" href = "/finalProject/html/events.html"><i class="fa fa-coffee"></i>Events</a>
+            <a class="font-effect-outline" href = "/finalProject/html/merch.html"><i class="fa fa-coffee"></i>Merch</a>
+            <a class="font-effect-outline" href = "/finalProject/html/contact.html"><i class="fa fa-coffee"></i>Contact Us</a>
+        </p>
+            <div class="sidebars">
+            <div class = "infoBar">                
+                <p>Hours:</p>
+                <p>5am - 6pm</p>
+                <p>Address:</p>
+                <p>1234 Coffee Bean Ln</p>
+                <p>Small Town, TX</p>
+                <p>76767</p>
+                <p>Phone:</p>
+                <p>(817)-567-0987</p>
+                <figure class="coffeecup">
+                    <img src="/finalProject/images/coffeecup.png"  alt="Blue Coffee Cup">
+                    <figcaption>Pixbay.com</figcaption>
+                </figure>
+            </div>
+            <div class="rightbar">
+                <h2>Find us on social media! </h2>
+                <a class="social" href="http://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="social" href="http://www.twitter.com/" target="_blank">Twitter</a>
+                <a class="social" href="https://www.instagram.com/"  target="_blank">Instagram</a>               
+                <form name="email" onsubmit="return validateForm()">
+                    <div class="email">
+                        <h3>Subscribe to our Newsletter</h3>
+                        <div class="email">                            
+                            <input type="text" placeholder="Email Address" name="input">
+                            <input type="submit" value="Subscribe">                            
+                        </div>
+                        <p id="date"></p>
+                        </div>                       
+                </form>           
+            </div>
+            
+        </div>
+            <main>
+                <div class = "flex-container">
+                    <div class ="column side"></div>
+                    
+                        <div class = "column middle">
+                            <figure class="mbanner">
+                                <img src = "/finalProject/images/mainbanner.png"
+                                sizes="(min-width: 600px) 50vw, 
+                                (min-width: 400px) 50vw, 100vw" 
+                                srcset="/finalProject/images/mainbanner350.png 350w, 
+                                /finalProject/images/mainbanner.png 800w" alt = "The Coffee Co.">
+                                <figcaption>Made in Canva</figcaption>
+                            </figure>
+                            <h2>Welcome to The Coffee Co.</h2>
+                            <div class = "column middle">
+                            <p>
+                                Welcome to our cozy coffee shop. We Look forward to providing the best cup of coffee
+                                every day, just when you need it! We love serving our small community and welcoming new 
+                                visitors. Check out our events page to get social. Conveniently, we also have our menu online if you want 
+                                to know what you want to order before you get here. We also take online orders, so check that
+                                the area as well! 
+                            </p>
+                            <p>
+                                We also have a merch area that shows what tote bags of the month we have up for sale 
+                                in our shop. At this time, we can't take online orders, so these are just available in the shop.
+                                They fly off the shelves. In the future we plan to include t-shirts and mugs. Both have been highly
+                                requested. Currently you can buy our Logo T-shirt in store, if you want to support us.                                   
+                            </p>
+                            <p>
+                                We make sure to sustainably source our coffee. The people who grow the coffe anre just as important
+                                as the people crafting your drink. Craft coffee is an experience from the plant to your hands. 
+                            </p>                            
+                            <p>
+                                Inside our shop we have a room for meetings if desired. Just tell our barista at the front counter 
+                                when you would like to schedual your meeting or if the room is available go ahead and use it.
+                            </p>
+                            <aside>
+                                <p>
+                                    So, come in for a visit or meet us every morning for your daily latte, we would love to make
+                                    your perfect cup of coffee, to make your day better. If you don't love your drink, please tell us 
+                                    so we can try again! We want it to be perfect.
+                                </p>
+                            </aside>
+                            <iframe width="350" height="150" src="https://www.youtube.com/embed/WeqGjaE2who?autoplay=1&mute=1&loop=1">
+                            </iframe>
+                            <h2>Be sure to check out our Events Page!</h2>
+                            <p>
+                                Here is a quick video overview of current events! We believe in creating a strong community. When we befriend our neighbors, we 
+                                create a stronger community. So, in an effort to create those friendships, we host many 
+                                monthly and weekly events. We have game nights and book clubs and trivia nights. 
+                                There are some community events we attend, so make sure you stay up-to-date and come 
+                                visit! To find more details go to our events page. We also have a feedback area on our
+                                contacts page, so if you have ideas for events we should include, we can gauge interest
+                                and see about planning a new event. Our Board Game Nights came from a suggestion, so the 
+                                possibilities are endless. Maybe tell us your favorite movie and we can build a trivia night around it.
+                            </p>
+                            <iframe width="350" height="150" src="https://www.youtube.com/embed/JE9zAhLlc4s?autoplay=1&mute=1&loop=1">
+                            </iframe>
+                            
+                            <p>
+
+
+
+                            </p>
+                            </div>
+
+                        </div>
+                        
+                    
+                    <div class = "column right">
+                        <script>
+                            draw(weather);
+                        </script>
+                    </div>
+                </div>
+
+            </main>
+            
+            <footer>
+                <p>Name: Emily Pryor Website for class final project</p>
+                
+                
+            </footer>        
+        <!--Java Script Link-->
+        <script src='/finalProject/js/valid.js'></script>
+        <script>
+            document.getElementById("date").innerHTML = "Date : " + Date(); </script>
+    </body>
+</html>
